@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+      <title>My First Template</title>
+    </head>
+    <body>
+      <h3>My flask template with embedded Python-like code</h3>
+
+      <p>Phrase: {{ phrase }}</p>
+
+      <p>Times: {{ times }}</p>
+
+      {% for x in range(0,times): %}
+      <p>{{ phrase }}</p>
+      {% endfor %}
+      
+      {% if phrase == "hello" %}
+ <p>The phrase says hello</p>
+      {% endif %}
+    </body>
+</html>
+
+<!-- <html>
+    <head>
+       <title>Form Test Index</title>
+    </head>
+    <body>
+      <h1>Index Page</h1>
+      <h3>Create a User</h3>
+      read on to learn about form actions, we'll talk about the method in a later section
+      <form action='/users' method='post'>
+          Name: <input type='text' name='name'>
+          Email: <input type='text' name='email'>
+          <input type='submit' value='create user'>
+      </form>
+    </body>
+</html> -->
